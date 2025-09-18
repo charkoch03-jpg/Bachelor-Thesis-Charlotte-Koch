@@ -17,7 +17,6 @@ This folder contains scripts for cleaning, epoching, and checking pupil & gaze d
   - Picture-locked (fixed window)  
 - Saves pupil, gaze, and time vectors in MATLAB-compatible format.  
 
-### `PupilDataCheck_freeViewing.py`
-- Quick visual QA of picture-locked pupil signals.  
+### `PupilDataCheck_freeViewing.py` 
 - Plots single trials, grand averages with CI, and overlays per condition.  
 - Includes per-participant distribution plots (dominant eye).  
