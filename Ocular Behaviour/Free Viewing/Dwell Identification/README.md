@@ -1,6 +1,6 @@
 # Dwell Identification — Free Viewing
 
-This folder contains scripts for detecting and summarizing cross and picture dwells x-position data.
+This folder contains scripts for detecting and summarizing cross and picture dwells based on x-position data.
 
 ## Files in this folder
 
