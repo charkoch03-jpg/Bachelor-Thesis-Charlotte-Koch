@@ -7,7 +7,7 @@ This folder contains scripts to classify trials as cheater/non-cheater, plot pup
 ## Files
 
 ### `labelCheater_cueTask.py`
-- Determines cheater trials based on gaze position at picture onset relative to a calibration window.
+- Determines cheater trials based on gaze position at picture onset relative to a the trial specific center.
 - Saves `cheater.mat` (0 = non-cheater, 1 = cheater).
 
 ### `pupilPlots_cheater.py` / `pupilPlots_noncheater.py`
@@ -20,7 +20,7 @@ This folder contains scripts to classify trials as cheater/non-cheater, plot pup
 - Separate scripts for cheater vs non-cheater trials.
 
 ### `lmm_cheater.py` / `lmm_noncheater.py`
-- Builds trial-level DataFrames with pupil size at 0–1500 ms (50 ms steps) and metadata (participant, valence, previous_valence, task condition).
+- Builds trial-level DataFrames with pupil size at -1000ms to +1400 ms (100 ms steps) and participantID, valence, previous_valence, task condition.
 - Fits LMMs per timepoint: `pupil_tp ~ valence + previous_valence + condition + (1|participant)`.
 - Collects and plots p-values of fixed effects over time.
 - Separate models for cheater and non-cheater trials.
