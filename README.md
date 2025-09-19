@@ -1,7 +1,6 @@
 # Bachelor-Thesis-Charlotte-Koch
 ## Repository Overview
-This repository contains all analysis scripts used in my bachelor thesis. 
-The subfolders also include their own READMEs with more detailed explanations of the scripts they contain.
+This repository provides the scripts used in my bachelor thesis. The overall structure mirrors the organization of the thesis, and each subfolder includes a README with more detailed information about the scripts it contains.
 
 ### 1. Data Preparation
 Scripts for preprocessing pupil and behavioral data, epoching and performing quality checks.
