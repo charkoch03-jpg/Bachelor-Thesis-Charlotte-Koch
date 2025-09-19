@@ -1,12 +1,12 @@
 # Cue Task — Pupil Main Analysis
 
-This folder contains scripts for analyzing pupil responses in the Cue Task, including plotting trial-locked time courses and preparing data for linear mixed models (LMM).
+This folder contains scripts for analyzing pupil responses in the Cue Task, including plotting trial-locked time courses and running linear mixed models (LMM).
 
 ## Files in this folder
 
 **PupilPlots_cueTask.py**  
 Prepares and visualizes pupil size data across trials and participants.  
-- Loads left/right eye pupil traces, dominant-eye info, cue side, block order, and picture sequences.  
+- Loads left/right eye pupil traces based on dominant-eye info, cue side, block order, and picture sequences.  
 - Computes per-trial labels for current valence, previous valence, and task condition (congruent/incongruent).  
 - Splits data into groups by valence, previous valence, task, and their interactions.  
 - Computes participant-level means and 95% confidence intervals.  
@@ -16,7 +16,7 @@ Prepares and visualizes pupil size data across trials and participants.
   - Interaction: Previous × Current valence
   - Task condition
   - Interaction: Task × Current valence  
-- Prints descriptive statistics at 500 ms post-picture onset (participant-level).
+- Prints descriptive statistics of pupil size values at 500 ms post-picture onset.
 
 **lmm_cueTask.py**  
 Prepares LMM-ready data tables and computes descriptive statistics.  
