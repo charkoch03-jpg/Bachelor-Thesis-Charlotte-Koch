@@ -9,14 +9,16 @@ This folder contains scripts for cleaning, epoching, and checking pupil & gaze d
 ### `pupil_preprocessing_freeViewing.py`
 - Cleans continuous pupil traces (mask invalids, remove jumps, interpolate, median-filter).  
 - Saves cleaned left/right pupil data as `.mat` files.  
-- Includes QC plot (before vs. after cleaning).  
+- Includes Quality Check plot (before vs. after cleaning).  
 
 ### `epoching_freeViewing.py`
-- Segments continuous signals into two modes:  
-  - Cross→Cross (variable-length)  
-  - Picture-locked (fixed window)  
-- Saves pupil, gaze, and time vectors in MATLAB-compatible format.  
+- Segments continuous signals in two different ways:  
+  - Cross onset → Cross onset (variable length)  
+  - around Picture onset (fixed length)  
+- Saves pupil, gaze, and time vectors in mat files.  
 
 ### `PupilDataCheck_freeViewing.py` 
-- Plots single trials, grand averages with CI, and overlays per condition.  
-- Includes per-participant distribution plots (dominant eye).  
+- Plots single trials
+- plots grand average with CI
+- plots all pupil traces for positive and for negative trials
+- Includes plot of pupil size value distributions per participant
